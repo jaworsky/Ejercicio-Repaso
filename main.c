@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "math.h" // solo el punto h
+#include <string.h>
+#include <stdio_ext.h>
+
 
 // instalar linux
 // system("clear");
