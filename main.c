@@ -13,6 +13,7 @@
 //caso 4 informa
 
 /*
+agregarle la letra P a la variable q sea puntero, pnumero1
 el punto h tiene el prototipo, firmas
 el punto c tiene el desarrollo, las implementaciones
 por cada biblioteca 2 archivos uno .c y uno .h

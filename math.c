@@ -4,7 +4,8 @@
 #include <string.h>
 #include <stdio_ext.h>
 
-/* al archivo.c hay que agregarle las lirberias
+/*
+al archivo.c hay que agregarle las lirberias
 */
 
 
