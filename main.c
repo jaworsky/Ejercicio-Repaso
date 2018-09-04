@@ -3,7 +3,6 @@
 #include "validaredad.h"
 
 
-
 int main()
 {
 

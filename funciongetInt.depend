@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1536019685 source:c:\users\alumno\desktop\tp1\funciongetint\main.c
+1536019822 source:c:\users\alumno\desktop\tp1\funciongetint\main.c
 	<stdio.h>
 	<stdlib.h>
 	"validaredad.h"
 
 1536019235 c:\users\alumno\desktop\tp1\funciongetint\validaredad.h
 
-1536019367 source:c:\users\alumno\desktop\tp1\funciongetint\validaredad.c
+1536019788 source:c:\users\alumno\desktop\tp1\funciongetint\validaredad.c
 	<stdio.h>
 	"validaredad.h"
 

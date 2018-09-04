@@ -34,6 +34,10 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="validaredad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="validaredad.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
