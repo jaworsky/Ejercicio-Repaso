@@ -4,19 +4,35 @@
 int main()
 {
 
-int vector[5]={10,2,3,4,5};
+int vector[5]={0,0,0,0,0};
+char respuesta='s';
+int numero;
+int indice;
+
+do
+{
+
+    printf("Ingrese un numero: ");
+    scanf("%d",&numero);
+
+    printf("Ingrese el indice: ");
+    scanf("%d",&indice);
+
+    printf("desea continuar?");
+    scanf("%c",&respuesta);
+    fflush(stdin);
+
+    vector[indice]=numero;
+
+
+
+}while(respuesta!='n');
 
 for(int i=0;i<5;i++) // que algo se repita 5 veces
 {
-    printf("los numeros ingresados en orden son: %d\n",vector[i]);
+    printf("\nlos numeros ingresados en orden son: %d\n",vector[i]);
 
 }
-
-//printf("los numeros ingresados son: %d %d %d %d %d",vector[0],vector[1],vector[2],vector[3],vector[4]);
-
-
-
-
 
     return 0;
 }
