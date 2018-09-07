@@ -1,22 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "validaredad.h"
-
 
 int main()
 {
 
-char mensaje1[30]="ingrese la edad";
-char mensaje2[30]="Reingrese la edad";
-int limitesuperior=100;
-int limiteinferior=0;
-int edadvalidada;
+int vector[5];
 
-edadvalidada=getInt(mensaje1,mensaje2,limitesuperior,limiteinferior);
+for(int i=0;i<5;i++)
+{
+    printf("Ingrese un numero: ");
+    scanf("%d",&vector[i]);
 
-printf(" la edad validada es: %d \n",edadvalidada);
+}
+
+for(int i=0;i<5;i++)
+{
+    printf("los numeros ingresados en orden son: %d\n",vector[i]);
+
+}
+
+//printf("los numeros ingresados son: %d %d %d %d %d",vector[0],vector[1],vector[2],vector[3],vector[4]);
+
+
+
+
 
     return 0;
 }
-
-
