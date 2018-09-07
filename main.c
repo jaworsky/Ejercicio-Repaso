@@ -4,16 +4,9 @@
 int main()
 {
 
-int vector[5];
+int vector[5]={10,2,3,4,5};
 
-for(int i=0;i<5;i++)
-{
-    printf("Ingrese un numero: ");
-    scanf("%d",&vector[i]);
-
-}
-
-for(int i=0;i<5;i++)
+for(int i=0;i<5;i++) // que algo se repita 5 veces
 {
     printf("los numeros ingresados en orden son: %d\n",vector[i]);
 
