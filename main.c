@@ -13,7 +13,7 @@ void insertionSort(int array[], int size) // ordenamiento, probar con 4 de size
     {
 
         j=i;
-        while(j>0 && auxiliar<array[j-1])
+        while(j>0 && auxiliar<array[j-1]) // cambiamos el signo aca y listo, el2do <>
         {
             array[j]=array[j-1];
             j--;
