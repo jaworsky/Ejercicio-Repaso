@@ -1,30 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#define STRINGLEN 500
 
 int main()
 {
-
-void insertionSort(int array[], int size) // ordenamiento, probar con 4 de size
-{
-    int i;
-    int j;
-    int auxiliar;
-    for(i=1;i<size;i++)
-    {
-
-        j=i;
-        while(j>0 && auxiliar<array[j-1]) // cambiamos el signo aca y listo, el2do <>
-        {
-            array[j]=array[j-1];
-            j--;
-        }
-        array[j]=auxiliar;
-    }
-
-}
+    char miString[STRINGLEN];
+    strncpy(miString,"pepe",STRINGLEN); // para guardar algo en una cadena de caracteres
+    printf("%s",miString);
 
 
+    //comparar string
+    // si da 0 es porque lo encontro
+    int comparacion=strncmp("pepe",miString,STRINGLEN);
+    printf("\n%d",comparacion);
 
+return 0;
 
- return 0;
 }
