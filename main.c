@@ -1,48 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
-#define TAM 6
-
-void mostrarVector( int x[], int tam);
 
 int main()
 {
-int vector[TAM]={0}; // con poner un solo cero, ya inicializa los demas.
-char respuesta='s';
-int numero;
-int indice;
 
-do
+void insertionSort(int array[], int size) // ordenamiento, probar con 4 de size
 {
-    printf("Ingrese un numero: ");
-    scanf("%d",&numero);
-    printf("Ingrese el indice: ");
-    scanf("%d",&indice);
-    while(indice<0 || indice>=TAM) // valido el indice del vector
+    int i;
+    int j;
+    int auxiliar;
+    for(i=1;i<size;i++)
     {
-        printf("Ingrese un indice dentro del tamanio del vector: ");
-        scanf("%d",&indice);
+
+        j=i;
+        while(j>0 && auxiliar<array[j-1])
+        {
+            array[j]=array[j-1];
+            j--;
+        }
+        array[j]=auxiliar;
     }
 
-
-    printf("desea continuar?");
-    scanf("%c",&respuesta);
-    fflush(stdin);
-    vector[indice]=numero;
-
-}while(respuesta!='n');
-
-mostrarVector(vector, TAM);
-
-    return 0;
 }
 
-void mostrarVector( int x[], int tam)
-{
-    for(int i=0; i < tam; i++)
-    {
-        printf(" %d", x[i]);
-    }
-    printf("\n\n");
-}
 
+
+
+ return 0;
+}
