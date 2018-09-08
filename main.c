@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#define TAM 5
+#define TAM 6
 
 void mostrarVector( int x[], int tam);
 
 int main()
 {
-int vector[5]={0,0,0,0,0};
+int vector[TAM]={0}; // con poner un solo cero, ya inicializa los demas.
 char respuesta='s';
 int numero;
 int indice;
@@ -18,6 +18,13 @@ do
     scanf("%d",&numero);
     printf("Ingrese el indice: ");
     scanf("%d",&indice);
+    while(indice<0 || indice>=TAM) // valido el indice del vector
+    {
+        printf("Ingrese un indice dentro del tamanio del vector: ");
+        scanf("%d",&indice);
+    }
+
+
     printf("desea continuar?");
     scanf("%c",&respuesta);
     fflush(stdin);
